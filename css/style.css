@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Source+Code+Pro:wght@300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
-  
-    
+
+
 }
-body{
-    font-family: 'Open Sans', sans-serif
-    
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* header style start */
@@ -209,7 +210,7 @@ body{
     position: relative;
     bottom: 120px;
     right: 120px;
-    
+
     /* margin-left: 54px; */
 }
 
@@ -266,10 +267,11 @@ body{
     border-radius: 8px;
     text-align: center;
     margin-bottom: 180px;
-   
+
 }
-.activity-1:hover{
-    transform: rotate(30deg);
+
+.activity-1:hover {
+    transform: rotate(45deg);
     background-color: #eae6e6;
 }
 
@@ -312,46 +314,52 @@ body{
 /* Sponsors style end */
 /* main style end */
 /* contact style start */
-.contact{
+.contact {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: #f9f9f9;
     border-radius: 8px;
     margin-left: 240px;
-    margin-right:240px;
+    margin-right: 240px;
     margin-bottom: 35px;
     box-shadow: 10px 10px 10px 10px gray;
 }
+
 /* .contact-left{
 
 
 } */
-.contact-title{
+.contact-title {
     font-size: 25px;
     font-weight: 600;
 
 }
-.contact-details{
+
+.contact-details {
     font-size: 18px;
     color: #727272;
     margin-bottom: 15px;
 }
-.contact-right{
+
+.contact-right {
     padding: 30px;
 
 }
-.contact-right form{
+
+.contact-right form {
     padding: 20px;
-    
+
 }
-.contact-right input[type="text"]{
+
+.contact-right input[type="text"] {
     padding: 10px;
     margin-top: 10px;
     margin-left: 15px;
     margin-bottom: 10px;
 }
-.contact-right input[type="email"]{
+
+.contact-right input[type="email"] {
     padding: 10px;
     margin-top: 10px;
     margin-left: 18px;
@@ -362,22 +370,166 @@ body{
 
 /* contact style end */
 /* footer style start */
-.footer {
+.footer{
     text-align: center;
-    /* width: 1440px; */
-    /* height: 100px; */
+    /* width: 100%; */
+    margin-left: 240px;
+    margin-right: 240px;
 
+    
     background: #FFF4E7;
     border-radius: 8px;
-    margin-left: 240px;
-    margin-right:240px;
+   
     margin-bottom: 216px;
     padding: 74px 410px;
 
 }
+/*    .footer-part {
+    
+      width: 1440px; */
+    /* height: 100px; } 
 
 .footer-description {
     font-size: 20px;
 }
 
 /* footer style end */
+/*  media queries start for Mobile*/
+
+
+@media only screen and (max-width:576px) {
+    
+
+    .nav {
+        /* text-align: center; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-others>ul {
+        flex-direction: column;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .banners {
+        /* width: 100%; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* background: rgba(255, 144, 14, 0.1); */
+
+    }
+
+    /* .banner {} */
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 243px;
+    }
+
+    .features-left {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* .features-right{
+        display: grid;
+        
+        grid-template-columns: repeat(1,1fr);
+
+    } */
+    .content {
+        flex-direction: column;
+        margin-left: -195px;
+        
+    }
+
+    .left-features-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-features-content {
+        /* display: grid;
+        /* flex-direction: column; */
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .banner-img-2 {
+        width: 100%;
+    }
+
+    .experience-btn {
+        position: relative;
+        top: 0;
+        left: 100px;
+        margin-left: 175px;
+    }
+
+    .facts {
+        display: flex;
+        flex-direction: column;
+    }
+      .some-facts{
+        margin-left: -297px;
+      }
+    .activity {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 189px;
+    }
+
+    .sponsor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 162px;
+        
+        /* margin-left: -31px; */
+
+
+    }
+
+    .sponsor-list {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    /* .sponsor-img {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+    
+    } */
+    .contact {
+        flex-direction: column;
+        box-shadow: 0 0 0 0 white;
+    }
+
+    .footer {
+        /*   */
+        text-align: center;
+        margin-left: -254px;
+        
+        /* width: 100%; */
+
+
+        /* margin-left: 240px;
+        margin-right:240px; */
+
+
+        /* margin-left: 250px; */
+       
+
+    }
+
+  
+
+
+}
+
+
+
+/*  media queries end for Mobile*/
